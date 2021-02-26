@@ -1,0 +1,73 @@
+/* || Base Element Styles */
+
+* {
+	box-sizing: border-box;
+}
+body {
+	padding: 0;
+	margin: 0 auto;
+	background-color: rgb(245, 243, 243);
+	font-family: 'Open Sans', sans-serif;
+	color: #8b8b8b;
+	font-weight: 300;
+}
+a {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+	color: #595959;
+}
+h1 {
+	font-size: 4rem;
+}
+h2 {
+	font-size: 2rem;
+}
+h3 {
+	font-size: 1rem;
+}
+
+/* || Base Styles */
+/* This  solves the collapsing margin issue with header and h1 */
+.main-header {
+	padding: 1em 0;
+}
+.content-wrap,
+.main-wrapper {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.content-wrap {
+	background-color: white;
+}
+/* || Header and Main Navigation */
+
+.logo {
+	margin: 0;
+}
+
+/* || Media Queries */
+
+@media (max-width: 320px) {
+}
+@media (min-width: 768px) {
+	/*
+	.main-wrapper {
+		width: 100%;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+	*/
+}
+@media (min-width: 1024px) {
+	/*
+	.main-wrapper {
+		width: 70%;
+		margin: 0 auto;
+	}
+	*/
+}
