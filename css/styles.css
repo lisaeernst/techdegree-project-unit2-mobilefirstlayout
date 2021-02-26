@@ -50,7 +50,21 @@ h3 {
 .logo {
 	margin: 0;
 }
-
+.navigation {
+	display: block;
+	width: 90%;
+	margin: 1em auto 3em;
+	text-align: center;
+	font-weight: bold;
+}
+ul.navigation li {
+	margin-bottom: 10px;
+	padding: 1em;
+	background-color: white;
+}
+ul.navigation li a {
+	color: #4e4e4e;
+}
 /* || Media Queries */
 
 @media (max-width: 320px) {
