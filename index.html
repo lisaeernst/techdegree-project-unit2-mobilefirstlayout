@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <!--Using Flexbox code skills -->
     <div class="main-wrapper">
 
         <header class="main-header">
@@ -21,11 +22,11 @@
                 <h1 class="logo">Lisa E</h1>
                 <ul class="navigation">
                     <li><a href="">HOME</a></li>
-                    <li><a href="">PORTFOLIO</a></li>
-                    <li><a href="">CONTACT</a></li>
+                    <li><a href="#portfolio-h2">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
-            <img class="portfolio-image" src="images/responsive-layout-profile.png" alt="Image of Lisa E">
+            <img class="portfolio-image" src="images/lisae.jpg" alt="Image of Lisa E">
             <p class="header-para">Hi! I'm a front-end web developer who loves reponsive design and css. I recently
                 finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!
             </p>
@@ -33,7 +34,7 @@
         <!--End of header -->
         <section class="content-wrap">
 
-            <h2 class="portfolio-h2">PORTFOLIO</h2>
+            <h2 id="portfolio-h2">PORTFOLIO</h2>
 
             <section class="portfolio-block">
                 <img src="images/portfolio-1.png" alt="Marketing Page">
@@ -76,23 +77,22 @@
                 <p class="portfolio-para">Someone can enter in the numbers they want, and press the big blue button and
                     get the result.</p>
             </section>
-
-            <section class="contact-info">
-                <h2>CONTACT</h2>
-                <p>If you're interested in chatting or want more information about what I've been working on, I'd love
-                    to hear from you!</p>
-
-                <address>
-                    <p>Phone <a href="tel:+11115551234"> +1 (111) 555-1234</a></p>
-                    <p>Email <a href="mailto:email@yoursite.com">email@yoursite.com</a></p>
-                </address>
-            </section><!-- End of contact-info -->
-
         </section><!-- End of content-wrap -->
+        <section class="contact-info">
+            <h2 id="contact">CONTACT</h2>
+            <p>If you're interested in chatting or want more information about what I've been working on, I'd love
+                to hear from you!</p>
 
+            <address>
+                <p class="phone">Phone <a href="tel:+11115551234"> +1 (111) 555-1234</a></p>
+                <p class="email">Email <a href="mailto:email@yoursite.com">email@yoursite.com</a></p>
+            </address>
+        </section><!-- End of contact-info -->
+
+        <hr>
         <footer>
             <h3>Lisa E</h3>
-            <p class="back-to-top-link"><a href="">Back To Top</a></p>
+            <p id="back-to-top-link"><a href="#top">BACK TO TOP</a></p>
             <ul class="footer-navigation">
                 <li><a href="">HOME</a></li>
                 <li><a href="">PORTFOLIO</a></li>
