@@ -8,7 +8,7 @@
 body {
 	padding: 0;
 	margin: 0 auto;
-	background-color: rgb(250, 248, 248);
+	background-color: whitesmoke;
 	font-family: 'Open Sans', sans-serif;
 	color: #595959;
 	font-weight: 300;
@@ -74,8 +74,11 @@ hr {
 }
 ul.navigation li {
 	margin-bottom: 10px;
-	padding: 1em;
-	background-color: white;
+	padding: 0.6em;
+	background-color: whitesmoke;
+	/*background-image: linear-gradient(180deg, #ffffff 0%, #a6a8a8 100%);*/
+	/*background-image: linear-gradient(180deg, #ffffff 0%, #a6a8a8 50%, #bccbb3 100%);*/
+	border-radius: 12px;
 }
 .portfolio-image {
 	border-radius: 5px;
@@ -131,11 +134,15 @@ img {
 	text-align: center;
 	line-height: 1.5em;
 }
+.phone,
+.email {
+	font-style: normal;
+}
 .phone a,
 .email a {
 	color: #595959;
 	font-weight: bold;
-	font-size: 1.2rem;
+	font-size: 1rem;
 }
 footer {
 	display: flex;
