@@ -228,15 +228,9 @@ li#back-to-top-link a {
 	}
 	.portfolio-wrapper {
 		display: flex;
-		flex-direction: row;
+		/*flex-direction: row;*/
 	}
 	.portfolio-block {
-	}
-	.col1 {
-		flex: 1;
-	}
-	.col2 {
-		flex: 1;
 	}
 }
 @media (min-width: 1024px) {
