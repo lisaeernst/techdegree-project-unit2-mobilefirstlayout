@@ -54,6 +54,7 @@ ul.navigation li a {
 hr {
 	width: 90%;
 	border: solid 1px #d6d4d4;
+	margin-top: 2em;
 }
 .main-header {
 	background-image: url("../images/cameronlake.jpg");
@@ -68,6 +69,7 @@ hr {
 }
 .navigation {
 	width: 90%;
+	max-width: 100%;
 	margin: auto;
 	text-align: center;
 	font-weight: bold;
@@ -76,14 +78,13 @@ ul.navigation li {
 	margin-bottom: 10px;
 	padding: 0.6em;
 	background-color: whitesmoke;
-	/*background-image: linear-gradient(180deg, #ffffff 0%, #a6a8a8 100%);*/
-	/*background-image: linear-gradient(180deg, #ffffff 0%, #a6a8a8 50%, #bccbb3 100%);*/
 	border-radius: 12px;
 }
-.portfolio-image {
+img.portfolio-image {
+	width: 70%;
+	max-width: 100%;
+	margin: 15px auto 15px;
 	border-radius: 5px;
-	/*border: solid 2px rgb(139, 139, 139);*/
-	/*box-shadow: 5px 5px 4px 1px rgb(132 132 132 / 20%);*/
 	border-bottom: solid 3px #b9bdc6;
 }
 .header-para {
@@ -96,7 +97,7 @@ ul.navigation li {
 
 .header-para {
 	margin: 2em auto 2em;
-	width: 80%;
+	max-width: 80%;
 	line-height: 1.5em;
 	text-align: center;
 	font-weight: 600;
@@ -124,8 +125,8 @@ img {
 	margin: 3rem 0 3rem 0;
 }
 .portfolio-para,
-.contact-info p {
-	width: 85%;
+.contact-info-para {
+	max-width: 85%;
 	margin: 0 auto 3em;
 	text-align: center;
 	line-height: 1.5em;
@@ -133,6 +134,8 @@ img {
 .phone,
 .email {
 	font-style: normal;
+	text-align: center;
+	margin: 1em auto 2em;
 }
 .phone a,
 .email a {
@@ -167,11 +170,6 @@ li#back-to-top-link a {
 /* || Media Queries */
 
 @media (max-width: 320px) {
-	img.portfolio-image {
-		width: 70%;
-		max-width: 100%;
-		margin: 15px auto 15px;
-	}
 }
 
 @media (min-width: 768px) {
@@ -182,13 +180,19 @@ li#back-to-top-link a {
 		display: inline-block;
 		margin-left: 20px;
 	}
+	.full a {
+		color: #595959;
+		font-weight: bold;
+		font-size: 0.9em;
+	}
 	nav.main-nav {
 		display: flex;
 		flex-direction: column;
+		margin-top: 2rem;
 	}
 
 	.navigation {
-		width: 90%;
+		max-width: 90%;
 		margin: auto;
 		text-align: center;
 		font-weight: bold;
@@ -202,42 +206,59 @@ li#back-to-top-link a {
 	ul.navigation li a {
 		color: white;
 	}
-	.main-header {
-		/*background-image: none;
-		background-color: tomato;
-		*/
-	}
 	.header-img-para {
 		display: flex;
 		flex-direction: row-reverse;
+		margin-top: 2rem;
 	}
-	.portfolio-image {
-		width: 30%;
-		margin: 25px 25px 50px 15px;
+	img.portfolio-image {
+		max-width: 30%;
+		margin: 1.5rem 3rem 3rem 1rem;
 		border-bottom: none;
-		/*box-shadow: 5px 8px 2px 1px rgb(68 68 68 / 55%);*/
 	}
 	.header-para {
 		max-width: 70%;
-		padding: 0 15px 0 15px;
 		text-align: left;
 		line-height: 1.8em;
 		font-weight: normal;
 		font-size: 1.2rem;
-		margin: 1em 2em 0 1em;
+		margin: 1em 2em 0 1.7em;
 	}
 	.portfolio-wrapper {
 		display: flex;
-		/*flex-direction: row;*/
+		flex-wrap: wrap;
 	}
 	.portfolio-block {
+		max-width: 50%;
+	}
+	.contact-info-para {
+		font-size: larger;
+		text-align: center;
+		padding: 0 75px 0;
+	}
+	.phone,
+	.email {
+		font-size: larger;
+	}
+	footer {
+		margin: 1em 2.5em 50px 2.5em;
+		padding: 0;
 	}
 }
 @media (min-width: 1024px) {
-	/*
-	.main-wrapper {
-		width: 70%;
-		margin: 0 auto;
+	.portfolio-block {
+		max-width: 33.33%;
 	}
-	*/
+	footer {
+		margin: 1em 3.0em 50px 3em;
+	}
+	nav.main-nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin: 2rem 1rem 0 2rem;
+	}
+	.navigation {
+		justify-content: flex-end;
+	}
 }
