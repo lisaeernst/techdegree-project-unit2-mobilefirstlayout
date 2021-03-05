@@ -202,20 +202,42 @@ li#back-to-top-link a {
 	ul.navigation li a {
 		color: white;
 	}
+	.main-header {
+		/*background-image: none;
+		background-color: tomato;
+		*/
+	}
 	.header-img-para {
 		display: flex;
 		flex-direction: row-reverse;
 	}
 	.portfolio-image {
 		width: 30%;
+		margin: 25px 25px 50px 15px;
+		border-bottom: none;
+		/*box-shadow: 5px 8px 2px 1px rgb(68 68 68 / 55%);*/
 	}
-	/*
-	.main-wrapper {
-		width: 100%;
-		max-width: 1000px;
-		margin: 0 auto;
+	.header-para {
+		max-width: 70%;
+		padding: 0 15px 0 15px;
+		text-align: left;
+		line-height: 1.8em;
+		font-weight: normal;
+		font-size: 1.2rem;
+		margin: 1em 2em 0 1em;
 	}
-	*/
+	.portfolio-wrapper {
+		display: flex;
+		flex-direction: row;
+	}
+	.portfolio-block {
+	}
+	.col1 {
+		flex: 1;
+	}
+	.col2 {
+		flex: 1;
+	}
 }
 @media (min-width: 1024px) {
 	/*
