@@ -255,7 +255,7 @@ li#back-to-top-link a {
 		max-width: 30%;
 		margin: 1.5rem 3rem 3rem 1rem;
 		border-bottom: none;
-		height: 400px;
+		max-height: 350px;
 	}
 	.header-para {
 		max-width: 70%;
