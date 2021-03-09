@@ -238,7 +238,7 @@ li#back-to-top-link a {
 	}
 
 	.navigation {
-		max-width: 90%;
+		max-width: 80%;
 		margin: auto;
 		text-align: center;
 		font-weight: bold;
@@ -252,6 +252,16 @@ li#back-to-top-link a {
 	ul.navigation li a {
 		color: white;
 	}
+	ul.navigation li a:hover {
+		color: #595959;
+		border-bottom: solid 2px #595959;
+		transition: 0.2s;
+	}
+	ul.footer-navigation li a:hover {
+		color: #f49a39;
+		border-bottom: solid 2px #f49a39;
+		transition: 0.2s;
+	}
 	.header-img-para {
 		display: flex;
 		flex-direction: row-reverse;
@@ -263,6 +273,7 @@ li#back-to-top-link a {
 		margin: 1.5rem 3rem 3rem 1rem;
 		border-bottom: none;
 		max-height: 350px;
+		border: solid 5px white;
 	}
 	.header-para {
 		max-width: 70%;
