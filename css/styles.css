@@ -78,11 +78,28 @@ hr {
 	text-align: center;
 	font-weight: bold;
 }
+ul.navigation li a {
+	display: block; /* makes the whole button clickable not just the a link */
+}
 ul.navigation li {
 	margin-bottom: 10px;
 	padding: 0.6em;
 	background-color: white;
 	border-radius: 12px;
+}
+ul.navigation li:hover {
+	background-position: 100px 0;
+	background-image: linear-gradient(
+		to right,
+		rgb(103, 90, 133),
+		rgb(103, 90, 133),
+		rgb(152, 137, 187),
+		rgb(103, 90, 133)
+	);
+	transition: all 0.4s ease-in-out;
+}
+ul.navigation li a:hover {
+	color: white;
 }
 img.portfolio-image {
 	width: 70%;
