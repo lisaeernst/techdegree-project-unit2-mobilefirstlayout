@@ -60,9 +60,10 @@ hr {
 }
 .main-header,
 .skills-block {
-	background-image: url("../images/orange-wave-background-lg.jpg");
+	background-image: url("../images/orange-wave-background-lg-2.jpg");
 	background-repeat: no-repeat;
 	max-width: 100%;
+	min-height: 750px;
 }
 .logo {
 	color: white;
@@ -103,7 +104,8 @@ h1.logo {
 }
 
 .header-para {
-	margin: 2em auto 2em;
+	/* margin: 2em auto 2em; */
+	margin: 2em auto 0;
 	max-width: 80%;
 	line-height: 1.5em;
 	text-align: center;
@@ -213,6 +215,10 @@ li#back-to-top-link a {
 }
 
 @media (min-width: 768px) {
+	.main-header {
+		height: 500px;
+		min-height: 100%;
+	}
 	li#back-to-top-link {
 		display: none;
 	}
