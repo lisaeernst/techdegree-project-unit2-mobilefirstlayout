@@ -211,9 +211,10 @@ li#back-to-top-link a {
 }
 
 /* || Media Queries */
-
+/*
 @media (max-width: 320px) {
 }
+*/
 
 @media (min-width: 768px) {
 	.main-header {
@@ -269,8 +270,9 @@ li#back-to-top-link a {
 		margin-top: 2rem;
 	}
 	img.portfolio-image {
-		max-width: 30%;
+		/* max-width: 30%; */
 		/* flex-basis: 30%; */
+
 		margin: 1.5rem 3rem 3rem 1rem;
 		border-bottom: none;
 		max-height: 350px;
