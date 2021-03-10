@@ -81,6 +81,7 @@ hr {
 ul.navigation li a {
 	display: block; /* makes the whole button clickable not just the a link */
 }
+
 ul.navigation li {
 	margin-bottom: 10px;
 	padding: 0.6em;
@@ -113,7 +114,6 @@ h1.logo {
 }
 .header-para {
 	color: white;
-	/* text-shadow: 2px 2px 4px #6b6a6aed; */
 }
 .logo {
 	font-size: 2em;
@@ -121,7 +121,6 @@ h1.logo {
 }
 
 .header-para {
-	/* margin: 2em auto 2em; */
 	margin: 2em auto 0;
 	max-width: 80%;
 	line-height: 1.5em;
@@ -274,14 +273,21 @@ li#back-to-top-link a {
 	ul.navigation li a {
 		color: white;
 	}
+	/*  removes display:block for mobile by setting to inline and prevents content bouncing while hovering on navigation links 
+	then removes the mobile button styles hover on larger screens */
+	ul.navigation li a {
+		display: inline;
+	}
+	ul.navigation li:hover {
+		background-image: none;
+	}
+	/* end of mobile button style changes */
 	ul.navigation li a:hover {
 		color: #595959;
-		border-bottom: solid 2px #595959;
 		transition: 0.2s;
 	}
 	ul.footer-navigation li a:hover {
 		color: #f49a39;
-		border-bottom: solid 2px #f49a39;
 		transition: 0.2s;
 	}
 	.header-img-para {
@@ -290,9 +296,6 @@ li#back-to-top-link a {
 		margin-top: 2rem;
 	}
 	img.portfolio-image {
-		/* max-width: 30%; */
-		/* flex-basis: 30%; */
-
 		margin: 1.5rem 3rem 3rem 1rem;
 		border-bottom: none;
 		max-height: 350px;
